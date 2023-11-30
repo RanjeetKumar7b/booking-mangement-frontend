@@ -6,7 +6,7 @@ function Bookingscreen () {
   const [rooms, setrooms] = useState([])
   useEffect(() => {
     async function fetchMyAPI() {
-      let data = await fetch("./api/rooms/getroombyid",{roomid}).data;
+      let data = await fetch("https://backend-nfls.onrender.com/api/rooms/getroombyid",{roomid}).data;
       data = await data.json()
       setrooms(data)
     }
