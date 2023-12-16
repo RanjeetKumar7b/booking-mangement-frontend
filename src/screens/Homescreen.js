@@ -4,7 +4,7 @@ function Homescreen() {
   const [rooms, setrooms] = useState([])
   useEffect(() => {
     async function fetchMyAPI() {
-      let data = await fetch('./api/rooms/getallrooms')
+      let data = await fetch('https://backend-nfls.onrender.com/api/rooms/getallrooms', { withCredentials: true })
       data = await data.json()
       setrooms(data)
     }

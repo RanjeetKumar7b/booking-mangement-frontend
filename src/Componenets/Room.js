@@ -3,7 +3,6 @@ import {Modal,Button,Carousel} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 function Room({room}) {
           const [show, setShow] = useState(false);
-
           const handleClose = () => setShow(false);
           const handleShow = () => setShow(true);
   return (
